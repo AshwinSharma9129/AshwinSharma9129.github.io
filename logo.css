@@ -1,0 +1,74 @@
+	.motto-container
+	{
+		text-align: center;
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
+	}
+	.motto-container span
+	{
+		
+		text-transform: uppercase;
+		display: block;
+				}
+		.compName
+		{
+			display: block;
+			position: absolute;
+			color: #E74292;/* rgb(191, 11, 32);*/
+			text-align: center;
+			font-size: 7vw;
+			margin-top: 20%;
+			margin-bottom: 10px;
+			letter-spacing: 3px;
+			font-weight: 700;
+			position: relative;
+			animation: text 6s 1;
+			text-transform: uppercase;
+			
+		}
+		.motto
+		{
+			display: block;
+			text-transform: uppercase;
+			text-align: center;
+			color: orange;
+			font-size: 2vw;
+			left: 50%;
+			word-spacing: 5px;
+			letter-spacing: 6px;
+			animation: textappear 6s 1;
+		}
+		@keyframes text{
+			0%{
+				color: transparent;
+				margin-bottom: -40px;
+
+			}
+			25%{
+				letter-spacing: 10px;
+				margin-bottom: -40px;
+				font-size: 9vw;
+			}
+			85%{
+				letter-spacing: 6px;
+				margin-bottom: -50px;
+			}
+		}
+		@keyframes textappear
+		{	
+			0%
+			{
+				color: transparent;
+			}
+			80%
+			{
+				color: transparent;
+			}
+			100%
+			{
+				color: orange;
+			}
+		}
